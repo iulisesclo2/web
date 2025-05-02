@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuquio</title>
+ <link rel="stylesheet" href="estilo.css" />
+
+ <style>
+     
+.photo{
+    position: relative;
+    left: 6cm;
+    height: 15cm;
+    width: 20cm;
+}
+
+
+/* Estilo general para los botones */
+.boton {
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+    display: inline-block; /* Botones en línea */
+    text-align: center; /* Centra el contenido */
+}
+
+/* Estilos específicos para cada botón */
+.boton1 {
+    background-color: #FF5733; /* Naranja-rojo */
+    margin: 20px; /* Margen específico para botón 1 */
+}
+
+.boton2 {
+    background-color: #33FFBD; /* Verde menta */
+    margin: 25px; /* Margen específico para botón 2 */
+}
+
+.boton3 {
+    background-color: #3380FF; /* Azul vivo */
+    margin: 30px; /* Margen específico para botón 3 */
+}
+
+.boton4 {
+    background-color: #E8FF33; /* Amarillo */
+    margin: 35px; /* Margen específico para botón 4 */
+}
+
+.boton5 {
+    background-color: #FF33A8; /* Rosa intenso */
+    margin: 40px; /* Margen específico para botón 5 */
+}
+
+/* Hover para todos los botones */
+.boton:hover {
+    transform: scale(1.1);
+}
+
+.icono {
+    width: 50px; /* Ajusta el ancho según tu diseño */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+h1{
+        position: relative;
+        left: 8cm;
+        height: 1cm;
+        font-size: 1.5cm; 
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+
+
+
+
+
+
+/* Fondo general */
+body {
+  background: linear-gradient(to bottom, #add8e6, #fff8dc, #ffc0cb); /* azul claro, amarillo muy claro, rosa */
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Encabezado principal */
+header {
+  background-color: #0077b6; /* Azul fuerte */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Títulos principales */
+h1 {
+  position: relative;
+  left: 1cm;
+  height: 1cm;
+  font-size: 1.5cm;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+/* Subtítulos */
+h3.subtitulo {
+  text-align: center;
+  color: #ff69b4; /* Rosa */
+  font-size: 2em;
+  margin-top: 30px;
+}
+
+/* Líneas debajo de subtítulos */
+hr {
+  border: none;
+  border-top: 4px solid #ffd700; /* Amarillo */
+  width: 60%;
+  margin: 10px auto;
+}
+
+/* Párrafos */
+p.parrafo {
+  background-color: rgba(255, 255, 255, 0.8); /* Blanco semi-transparente */
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* Imágenes */
+img.imagen {
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Botón salir */
+button.btnsalir {
+  background-color: #ff69b4; /* Rosa */
+  border: none;
+  border-radius: 12px;
+  padding: 12px 25px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  margin: 40px auto;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Efecto hover del botón */
+button.btnsalir:hover {
+  background-color: #ff1493; /* Rosa más fuerte */
+  transform: scale(1.05);
+}
+
+/* Imagen dentro del botón */
+button.btnsalir img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Quitar decoración de enlaces */
+button.btnsalir a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Lista dentro del botón */
+button.btnsalir li {
+  list-style: none;
+}
+
+/* Enlaces normales */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsive para dispositivos pequeños */
+@media (max-width: 768px) {
+  p.parrafo {
+      width: 90%;
+      padding: 15px;
+  }
+}
+
+
+
+
+ </style>
+
+
+
+
+
+</head>
+<body>
+<div id="container">
+    
+
+    <header>
+        <h1>!Bienvenido a Cuquio!</h1>
+    </header>
+
+
+
+    <button class="boton1">
+        <li>
+            <a href="religion.html">
+                <img src="Liglesia.jpg" alt="icono" class="icono"> RELIGION
+            </a>
+        </li>
+    </button>
+
+
+
+    <button class="boton2">
+        <li>
+            <a href="turismo.html">
+                <img src="LTurismo.jpg" alt="icono" class="icono"> TURISMO
+            </a>
+        </li>
+    </button>
+
+
+
+    <button class="boton3">
+        <li>
+            <a href="Gastronomia.html">
+                <img src="LGastronomia.jpg" alt="icono" class="icono"> GASTRONOMIA
+            </a>
+        </li>
+    </button>
+
+            
+      
+
+            
+      
+    <button class="boton4">
+        <li>
+            <a href="eventos.html">
+                <img src="LParranda.jpg" alt="icono" class="icono"> EVENTOS
+            </a>
+        </li>
+    </button>
+
+     
+
+
+    
+    <button class="boton5">
+        <li>
+            <a href="historia.html">
+                <img src="LHistoria.jpg" alt="icono" class="icono"> HISTORIA Y G
+            </a>
+        </li>
+    </button>
+
+</div>
+
+    
+<hr>
+
+
+<section id="content">
+    <article class="article"> 
+
+    <P>¡Bienvenidos a la página oficial de Cuquío, Jalisco!
+
+        Este encantador municipio, ubicado en la región Altos Sur del estado de Jalisco, es un lugar lleno de tradición, cultura y belleza natural. Su nombre proviene del náhuatl "Cuixui," que se interpreta como “lugar de ranas”. Cuquío fue fundado durante la época colonial y tuvo gran importancia durante el virreinato por su papel en la minería y la agricultura.
+        
+        Hoy, Cuquío conserva su esencia con su arquitectura tradicional, sus fiestas patronales y la calidez de su gente. ¡Explora con nosotros su historia, su cultura y todo lo que este hermoso rincón de Jalisco tiene para ofrecer! 🦖
+    </P>
+    </article>
+</section>
+
+
+<br/>
+<hr>
+<br/>
+
+<img class="photo" src="PrincipalCuquio.jpg"  title="Bienvenido a Cuquio Jalisco"/>
+
+<br/>
+<br/>
+
+
+
+
+
+
+
+    
+</body>
+</html>
